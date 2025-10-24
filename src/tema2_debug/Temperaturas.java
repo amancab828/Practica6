@@ -12,19 +12,20 @@ public class Temperaturas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        mostrarMensajeBienvenida(); // Falta poner punto y coma
+        mostrarMensajeBienvenida(); // AMC20252410: Falta poner punto y coma
 
         boolean continuar = true;
 
-        while (continuar==true) { // Está mal puseta la condición
-            double temperatura = pedirTemperatura(sc); // Falta poner punto y coma
-            mostrarResultado(temperatura); // Falta poner punto y coma
+        while (continuar==true) { // AMC20252410: Está mal puseta la condición
+            double temperatura = pedirTemperatura(sc); // AMC20252410: Falta poner punto y coma
+            mostrarResultado(temperatura); // AMC20252410: Falta poner punto y coma
 
             System.out.print("¿Desea introducir otra temperatura? (s/n): ");
             String respuesta = sc.next();
 
-            if (respuesta == "n" || respuesta == "N") 
+            if (respuesta == "n" || respuesta == "N") { // AMC20252410: 
                 continuar = false;
+        	}
         }
 
         sc.close();  // Falta poner punto y coma
